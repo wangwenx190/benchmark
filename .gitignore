@@ -1,72 +1,42 @@
-*.a
-*.so
-*.so.?*
-*.dll
-*.exe
-*.dylib
-*.cmake
-!/cmake/**/*.cmake
-!/test/AssemblyTests.cmake
-*~
-*.swp
-*.pyc
-__pycache__
-.DS_Store
-
-# lcov
-*.lcov
-/lcov
-
-# cmake files.
-/Testing
+# Build products
+[Bb]uild*/
+[Oo]utput*/
+[Ii]nstall*/
+[Bb]in*/
+[Ll]ib*/
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
-
-# makefiles.
+compile_commands.json
+install_manifest.txt
 Makefile
-
-# in-source build.
-bin/
-lib/
-/test/*_test
-
-# exuberant ctags.
-tags
-
-# YouCompleteMe configuration.
-.ycm_extra_conf.pyc
-
-# ninja generated files.
+build.ninja
 .ninja_deps
 .ninja_log
-build.ninja
-install_manifest.txt
-rules.ninja
+*.a
+*.dll
+*.dylib
+*.exe
+*.exp
+*.ilk
+*.lib
+*.o
+*.obj
+*.pdb
+*.res
+*.so
+*.so.*
+*.rc
+!benchmark.rc
+!benchmark_main.rc
+!buildtest.bat
 
-# bazel output symlinks.
-bazel-*
-MODULE.bazel.lock
-
-# out-of-source build top-level folders.
-build/
-_build/
-build*/
-
-# in-source dependencies
-/googletest/
-
-# Visual Studio 2015/2017 cache/options directory
+# Editors and operating systems
+.cache/
+.idea/
 .vs/
-CMakeSettings.json
-
-# Visual Studio Code cache/options directory
 .vscode/
-
-# Python build stuff
-dist/
-*.egg-info*
-uv.lock
-
-# Rust build stuff
-/bindings/rust/target/
+.DS_Store
+Thumbs.db
+*.swp
+*~
